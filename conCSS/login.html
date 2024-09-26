@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la plataforma - Inicia sesión</title>
+    <!-- Definición de estilos, mediando CSS -->
+    <style>
+        .centrado-horizontal {
+            width: 50%;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 0 auto;
+            outline: 2px solid rgb(103, 149, 176);
+            text-align: center; 
+        }
+
+        .formulario {
+            width: 50%;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        fieldset {
+            width: 75%; 
+            margin: 0 auto; 
+            padding: 0 auto;
+            border-radius: 8px; 
+            border: 2px solid #ccc;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #222822;
+        }
+
+        .navbar {
+            background-color: #333; 
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block; 
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 150px;
+        }
+
+        .footer-section h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <a href="esstancias.html">Inicio</a>
+        <a href="anfitrion.html">Conviertete en anfitrión</a>
+        <a href="login.html" class="right">Iniciar Sesión</a> <!-- Alineado a la derecha -->
+    </div>
+
+    <!-- Forms -->
+    <div class="centrado-horizontal">
+        <div>
+            <p>Inicia sesión o regístrate</p>
+            <div class="formulario">
+                <form id="createLogin" action="/pagina de menu" method="post">
+                    <fieldset>
+                        <legend>Bienvenido!</legend>
+            
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            
+                        <label for="lastname">Apellido</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Tu apellido" required>
+            
+                        <label for="phone">Número de teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="55-5555-5555" pattern="[5]{2}-[0-9]{4}-[0-9]{4}" required>
+            
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            
+                        <label for="borndate">Fecha de nacimiento</label>
+                        <input type="date" id="borndate" name="borndate" required>
+            
+                        <label for="gender">Género</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Selecciona tu género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                            <option value="prefiero-no-decidir">Prefiero no decidir</option>
+                        </select>
+                    </fieldset>
+            
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Asistencia</h3>
+            <a href="#">Subsección</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Sección 2</h3>
+            <a href="#">Subsección</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Sección 3</h3>
+            <a href="#">Subsección</a>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        &copy; 2024 Nombre del sitio. Todos los derechos reservado
+    </div>
+</footer>
+</html>
