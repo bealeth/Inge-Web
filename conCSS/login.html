@@ -7,16 +7,28 @@
     <!-- Definición de estilos, mediando CSS -->
     <style>
         .centrado-horizontal {
-            width: 50%;
+            width: 400px;
             background-color: rgb(255, 255, 255);
             padding: 20px;
             margin: 0 auto;
             outline: 2px solid rgb(103, 149, 176);
             text-align: center; 
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .centrado-horizontal p{
+            padding: 20px;
+            margin: 0 auto;
+            text-align: center; 
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .formulario {
-            width: 50%;
+            /*width: 50%;*/
             background-color: rgb(255, 255, 255);
             padding: 20px;
             margin: 0 auto;
@@ -28,7 +40,9 @@
             margin: 0 auto; 
             padding: 0 auto;
             border-radius: 8px; 
+            margin-bottom: 10px;
             border: 2px solid #ccc;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         form {
@@ -40,14 +54,16 @@
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         input, select {
             width: 100%;
             padding: 8px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         input[type="submit"] {
@@ -57,6 +73,7 @@
             padding: 10px 20px;
             cursor: pointer;
             border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         input[type="submit"]:hover {
@@ -74,6 +91,7 @@
             color: white;
             text-align: center;
             padding: 14px 20px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         footer {
@@ -100,6 +118,7 @@
         .footer-section h3 {
             color: #ffffff;
             margin-bottom: 15px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .footer-section a {
@@ -108,7 +127,16 @@
             display: block;
             margin-bottom: 10px;
             font-size: 0.9em;
+            font-family: Arial, Helvetica, sans-serif;
         }
+
+        .controls{
+            width: 90%;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -122,27 +150,30 @@
     <!-- Forms -->
     <div class="centrado-horizontal">
         <div>
-            <p>Inicia sesión o regístrate</p>
+            <p>Formulario de registro</p>
             <div class="formulario">
                 <form id="createLogin" action="/pagina de menu" method="post">
                     <fieldset>
                         <legend>Bienvenido!</legend>
             
                         <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        <input class="controls" type="text" id="name" name="name" placeholder="Tu nombre" required>
             
                         <label for="lastname">Apellido</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Tu apellido" required>
+                        <input class="controls" type="text" id="lastname" name="lastname" placeholder="Tu apellido" required>
             
                         <label for="phone">Número de teléfono</label>
-                        <input type="tel" id="phone" name="phone" placeholder="55-5555-5555" pattern="[5]{2}-[0-9]{4}-[0-9]{4}" required>
+                        <input class="controls" type="tel" id="phone" name="phone" placeholder="55-5555-5555" pattern="[5]{2}-[0-9]{4}-[0-9]{4}" required>
             
                         <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        <input class="controls" type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
             
                         <label for="borndate">Fecha de nacimiento</label>
-                        <input type="date" id="borndate" name="borndate" required>
+                        <input class="controls" type="date" id="borndate" name="borndate" required>
             
+                        <label for="password" >Ingresa tu contrseña</label>
+                        <input class="controls" type="password" id="password" name="password" required>
+
                         <label for="gender">Género</label>
                         <select id="gender" name="gender" required>
                             <option value="" disabled selected>Selecciona tu género</option>
