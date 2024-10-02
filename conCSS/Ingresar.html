@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la plataforma - Inicia sesión</title>
+    <!-- Definición de estilos, mediando CSS -->
+    <style>
+        .centrado-horizontal {
+            width: 400px;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 0 auto;
+            outline: 2px solid rgb(103, 149, 176);
+            text-align: center; 
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .centrado-horizontal p{
+            padding: 20px;
+            margin: 0 auto;
+            text-align: center; 
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .formulario {
+            /*width: 50%;*/
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        fieldset {
+            width: 75%; 
+            margin: 0 auto; 
+            padding: 0 auto;
+            border-radius: 8px; 
+            margin-bottom: 10px;
+            border: 2px solid #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #222822;
+        }
+
+        .navbar {
+            background-color: #333; 
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block; 
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 150px;
+        }
+
+        .footer-section h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .controls{
+            width: 90%;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <a href="esstancias.html">Inicio</a>
+        <a href="anfitrion.html">Conviertete en anfitrión</a>
+    </div>
+
+    <!-- Forms -->
+    <div class="centrado-horizontal">
+        <div>
+            <p>Formulario de registro</p>
+            <div class="formulario">
+                <form>
+                    <fieldset>
+                        <legend>Inicio de sesión</legend>
+            
+                        <label for="email">Ingresa tu correo electrónico</label>
+                        <input class="controls" type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            
+                        <label for="password" >Ingresa tu contrseña</label>
+                        <input class="controls" type="password" id="password" name="password" required>
+
+                    </fieldset>
+            
+                    <input type="submit" value="Ingresar">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Asistencia</h3>
+            <a href="#">Subsección</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Sección 2</h3>
+            <a href="#">Subsección</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Sección 3</h3>
+            <a href="#">Subsección</a>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        &copy; 2024 Nombre del sitio. Todos los derechos reservado
+    </div>
+</footer>
+</html>
