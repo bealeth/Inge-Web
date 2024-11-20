@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de anfitrión | Earthbnb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Earthbnb</a>
+        <div class="menu">
+            <a href="behost.html">Conviértete en anfitrión</a>
+            <div class="dropdown">
+                <button class="dropdown-button">
+                    <img src="https://via.placeholder.com/30" alt="Foto de perfil" class="profile-icon">
+                    <span class="menu-icon">☰</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="inicio_sesion.html">Iniciar sesión</a>
+                    <a href="centro_ayuda.html">Centro de ayuda</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="menu">
+            <a href=#host_alojamientos>Alojamientos</a>
+            <a href=#host_reservas>Reservas</a>
+            <a href=cuenta.html>Cuenta</a>
+        </div>
+    </nav>
+
+    <h2 class="section-title">Crea un anuncio nuevo</h2>
+    <!-- Contenido principal -->
+    <div id="host_alojamientos" class="main-content">}
+        <div class="card3">
+            <h2 class="section-title">Alojamientos</h2>
+            <div class="card-container">
+                <!-- Tarjeta 1 -->
+                <a href="info_alojamiento.html" class="card-link">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" alt="Imagen de Propiedad 1">
+                        <div class="card-content">
+                            <h3>Casa en la playa</h3>
+                            <p>Hermosa vista al mar, ideal para relajarse.</p>
+                            <p class="price">$2000/noche</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="info_alojamiento.html" class="card-link">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" alt="Imagen de Propiedad 1">
+                        <div class="card-content">
+                            <h3>Casa en la playa</h3>
+                            <p>Hermosa vista al mar, ideal para relajarse.</p>
+                            <p class="price">$2000/noche</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cardbl">
+                <div class="card">
+                    <a href="alojamiento_host.html" class="card-link">
+                        <h3>Crea un anuncio nuevo</h3>
+                    </a>
+                </div>
+        </div>
+    </div>
+
+    <div id="host_reservas" class="main-content">
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('terminan')">Terminan pronto (0)</div>
+            <div class="tab" onclick="showTab('en-curso')">En curso (0)</div>
+            <div class="tab" onclick="showTab('empiezan')">Empiezan pronto (0)</div>
+            <div class="tab" onclick="showTab('proximas')">Próximas reservaciones (0)</div>
+            <div class="tab" onclick="showTab('evaluacion')">Evaluación pendiente (0)</div>
+        </div>
+        <div class="form active" id="terminan">
+            <p class="centered-message">Ninguna estancia termina hoy o mañana.</p>
+        </div>
+        <div class="form" id="en-curso">
+            <p class="centered-message">No hay estancias en curso.</p>
+        </div>
+        <div class="form" id="empiezan">
+            <p class="centered-message">No hay estancias que empiecen pronto.</p>
+        </div>
+        <div class="form" id="proximas">
+            <p class="centered-message">No hay próximas reservaciones.</p>
+        </div>
+        <div class="form" id="evaluacion">
+            <p class="centered-message">No hay evaluaciones pendientes.</p>
+        </div>
+    </div>
+        
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">© 2024 Earthbnb</div>
+        <a href="privacidad.html"> Privacidad - </a>  
+        <a href="terminos.html"> Términos - </a>
+        <a href="info.html"> Información de la compañía</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

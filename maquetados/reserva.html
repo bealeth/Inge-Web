@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthbnb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Earthbnb</a>
+        <div class="menu">
+            <a href="behost.html">Conviertete en anfitrión</a>
+            <div class="dropdown">
+                <!-- Botón principal -->
+                <button class="dropdown-button">
+                    <img src="https://via.placeholder.com/30" alt="Foto de perfil" class="profile-icon">
+                    <span class="menu-icon">☰</span>
+                </button>
+            
+                <!-- Menú desplegable -->
+                <div class="dropdown-menu">
+                    <a href="inicio_sesion.html"">Iniciar sesión</a>
+                    <a href="#centro_ayuda">Centro de ayuda</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            
+            <!-- Sección de detalles de la reserva -->
+            <section>
+                <h2 class="section-title">Detalles de la reserva</h2>
+                <!-- Tarjeta de la reserva -->
+                
+                <div class="card-container">
+                    <div class="card2">
+                        <div class="card-content">
+                            <p><strong>Fechas:</strong>26-27 de diciembre</p>
+                            <p><strong>Huéspedes:</strong> 8 huéspedes</p>
+                            
+                            <!-- Línea divisoria -->
+                            <hr class="divider">
+                            <h3>Detalles del precio</h3>
+                            <p><strong>Noche:</strong> $3,688.00 MXN</p>
+                            <p><strong>Tarifa de limpieza:</strong> $399.00 MXN</p>
+                            <p><strong>Impuestos:</strong> $817.40 MXN</p>
+                            <p><strong>Total: $4,904.40 MXN</strong></p>
+
+                            <img src="https://via.placeholder.com/300x200" alt="Imagen 3" class="large-image">
+                            <h3>Nombre del alojamiento</h3>
+                            <p>X.Y (# evaluaciones) • Clasificación del anfitrión</p>
+                            <div class="price">
+                                <p>$0,000.00 MXN / noche</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de pago -->
+            <form class="card2">
+                <h2>Elige cómo quieres pagar</h2>
+                <h2>Paga $0,000.00 MXN</h2>
+                
+                <h2>Ingresa los datos de tu tarjeta</h2>
+                <label for="card-number">Número de tarjeta</label>
+                <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                
+                <label for="expiry">Fecha de caducidad</label>
+                <input type="text" id="expiry" placeholder="MM/AA">
+                
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123">
+                
+                <label for="postal-code">Código postal</label>
+                <input type="text" id="postal-code" placeholder="12345">
+                
+                <label for="country">País/Región</label>
+                <select id="country">
+                    <option value="MX">México</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="ES">España</option>
+                </select>
+                <p></p>
+                <button class="btn" type="submit">Confirmar y pagar</button>
+            </form>
+
+            <!-- Política de cancelación -->
+            <section>
+                <h2 class="section-title">Política de cancelación</h2>
+                <p>Cancelación gratuita antes del 21 de diciembre. Pasado este plazo, la reservación no será reembolsable.</p>
+            </section>
+
+            </section>
+    
+        </main>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">© 2024 Earthbnb</div>
+        <a href="privacidad.html"> Privacidad - </a>  
+        <a href="terminos.html"> Términos - </a>
+        <a href="info.html"> Información de la compañía</a>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

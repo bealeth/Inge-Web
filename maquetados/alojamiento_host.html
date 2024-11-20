@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de anfitrión | Earthbnb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Earthbnb</a>
+        <div class="menu">
+            <a href="behost.html">Conviértete en anfitrión</a>
+            <div class="dropdown">
+                <button class="dropdown-button">
+                    <img src="https://via.placeholder.com/30" alt="Foto de perfil" class="profile-icon">
+                    <span class="menu-icon">☰</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="inicio_sesion.html">Iniciar sesión</a>
+                    <a href="centro_ayuda.html">Centro de ayuda</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="menu">
+            <a href=#host_alojamientos>Alojamientos</a>
+            <a href=#host_reservas>Reservas</a>
+            <a href=cuenta.html>Cuenta</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="alojamiento-completo">
+            <h2>Información del Alojamiento</h2>
+            <form id="alojamiento-form">
+
+                <!-- Nombre del alojamiento -->
+                <div class="form-group">
+                    <label for="nombre-alojamiento">Nombre del alojamiento:</label>
+                    <input type="text" id="nombre-alojamiento" name="nombre-alojamiento" placeholder="Ejemplo: Casa en la playa" required>
+                </div>
+
+                <!-- Subir fotos -->
+                <div class="form-group">
+                    <label for="fotos">Subir fotos del alojamiento:</label>
+                    <input type="file" id="fotos" name="fotos" accept="image/*" multiple>
+                </div>
+        
+        
+                <!-- Dirección -->
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ejemplo: Calle Principal 123, Ciudad" required>
+                </div>
+        
+                <!-- Cantidad de huéspedes -->
+                <div class="form-group">
+                    <label for="huespedes">Cantidad de huéspedes:</label>
+                    <input type="number" id="huespedes" name="huespedes" min="1" max="50" placeholder="Ejemplo: 4" required>
+                </div>
+        
+                <!-- Tipo de estancia -->
+                <div class="form-group">
+                    <label for="tipo-estancia">Tipo de estancia:</label>
+                    <select id="tipo-estancia" name="tipo-estancia" required>
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="casa-entera">Casa entera</option>
+                        <option value="habitacion-privada">Habitación privada</option>
+                        <option value="habitacion-compartida">Habitación compartida</option>
+                        <option value="departamento">Departamento</option>
+                    </select>
+                </div>
+        
+                <!-- Elementos del alojamiento -->
+                <form>
+                    <h3>Servicios incluidos:</h3>
+                <div class="servicio-item">
+                    <input type="checkbox" id="wifi" name="servicios" value="WiFi">
+                    <label for="wifi">WiFi</label>
+                </div>
+                <div class="servicio-item">
+                    <input type="checkbox" id="tv" name="servicios" value="Televisión">
+                    <label for="tv">Televisión</label>
+                </div>
+                <div class="servicio-item">
+                    <input type="checkbox" id="aire-acondicionado" name="servicios" value="Aire Acondicionado">
+                    <label for="aire-acondicionado">Aire Acondicionado</label>
+                </div>
+                <div class="servicio-item">   
+                    <input type="checkbox" id="cocina" name="servicios" value="Cocina equipada">
+                    <label for="cocina">Cocina equipada</label>
+                </div>
+                <div class="servicio-item">
+                    <input type="checkbox" id="estacionamiento" name="servicios" value="Estacionamiento">
+                    <label for="estacionamiento">Estacionamiento</label>
+                </div>
+                <div class="servicio-item">
+                    <input type="checkbox" id="mascotas" name="servicios" value="Acepta mascotas">
+                    <label for="mascotas">Acepta mascotas</label>
+                </div>
+                </form>
+                
+        
+                <!-- Botón de guardar -->
+                <button type="submit" class="guardar-btn">Guardar Información</button>
+            </form>
+        </div>
+        
+        
+    </main>
+        
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">© 2024 Earthbnb</div>
+        <a href="privacidad.html"> Privacidad - </a>  
+        <a href="terminos.html"> Términos - </a>
+        <a href="info.html"> Información de la compañía</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

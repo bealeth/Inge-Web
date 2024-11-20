@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción del Alojamiento | Earthbnb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Earthbnb</a>
+        <div class="menu">
+            <a href="behost.html">Conviértete en anfitrión</a>
+            <div class="dropdown">
+                <!-- Botón principal -->
+                <button class="dropdown-button">
+                    <img src="https://via.placeholder.com/30" alt="Foto de perfil" class="profile-icon">
+                    <span class="menu-icon">☰</span>
+                </button>
+            
+                <!-- Menú desplegable -->
+                <div class="dropdown-menu">
+                    <a href="inicio_sesion.html">Iniciar sesión</a>
+                    <a href="centro_ayuda.html">Centro de ayuda</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de descripción del alojamiento -->
+    <main class="main-content">
+        <section class="property-description">
+            <h2 class="section-title">Nombre del alojamiento</h2>
+        
+            <div class="image-carousel">
+                <div class="carousel">
+                    <img src="https://via.placeholder.com/600x400" alt="Imagen 1" class="carousel-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Imagen 2" class="carousel-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Imagen 3" class="carousel-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Imagen 3" class="carousel-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Imagen 3" class="carousel-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Imagen 3" class="carousel-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Imagen 3" class="carousel-image">
+                </div>
+                <button class="carousel-button prev">❮</button>
+                <button class="carousel-button next">❯</button>
+            </div>
+        
+            <div class="property-details">
+                <p><strong>Ubicación:</strong> Lugar más específico</p>
+                <p><strong>Descripción:</strong> Disfruta de una estancia cómoda y relajante en nuestro alojamiento, perfecto para desconectar y disfrutar del entorno.</p>
+                <p class="price"><strong>Precio:</strong> $dinero/noche</p>
+            </div>
+        </section>
+        
+
+        <!-- Formulario de reserva -->
+        <section class="reservation-form">
+            <h2 class="section-title">Reserva</h2>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="checkin">Fecha de Check-in:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkout">Fecha de Check-out:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Número de Huéspedes:</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Huésped</option>
+                        <option value="2">2 Huéspedes</option>
+                        <option value="3">3 Huéspedes</option>
+                        <option value="4">4 Huéspedes</option>
+                        <option value="5">5 Huéspedes</option>
+                        <option value="6">6 Huéspedes</option>
+                    </select>
+                </div>
+                <a href="reserva.html">Reservar</a>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">© 2024 Earthbnb</div>
+        <a href="privacidad.html"> Privacidad - </a>  
+        <a href="terminos.html"> Términos - </a>
+        <a href="info.html"> Información de la compañía</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

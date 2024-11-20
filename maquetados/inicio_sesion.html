@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthbnb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Earthbnb</a>
+        <div class="menu">
+            <a href="#behost">Conviertete en anfitrión</a>
+            <div class="dropdown">
+                <!-- Botón principal -->
+                <button class="dropdown-button">
+                    <img src="https://via.placeholder.com/30" alt="Foto de perfil" class="profile-icon">
+                    <span class="menu-icon">☰</span>
+                </button>
+            
+                <!-- Menú desplegable -->
+                <div class="dropdown-menu">
+                    <a href="inicio_sesion.html"">Iniciar sesión</a>
+                    <a href="#centro_ayuda">Centro de ayuda</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="login-container">
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('login')">Iniciar Sesión</button>
+            <button class="tab" onclick="showTab('register')">Registrarse</button>
+        </div>
+
+        <!-- Formulario de inicio de sesión -->
+        <div id="login" class="form active">
+            <h2>Iniciar Sesión</h2>
+            <form action="login_handler.php" method="POST">
+                <label for="login-email">Correo electrónico</label>
+                <input type="email" id="login-email" name="email" required>
+                
+                <label for="login-password">Contraseña</label>
+                <input type="password" id="login-password" name="password" required>
+                
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <p class="switch-text">¿No tienes cuenta? <a href="#" onclick="showTab('register')">Regístrate aquí</a></p>
+            </form>
+        </div>
+
+        <!-- Formulario de registro -->
+        <div id="register" class="form">
+            <h2>Registrarse</h2>
+            <form action="register_handler.php" method="POST">
+                <label for="register-name">Nombre completo</label>
+                <input type="text" id="register-name" name="name" required>
+                
+                <label for="register-email">Correo electrónico</label>
+                <input type="email" id="register-email" name="email" required>
+                
+                <label for="register-password">Contraseña</label>
+                <input type="password" id="register-password" name="password" required>
+                
+                <button type="submit" class="btn">Registrarse</button>
+                <p class="switch-text">¿Ya tienes cuenta? <a href="#" onclick="showTab('login')">Inicia sesión aquí</a></p>
+            </form>
+        </div>
+    </div>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">© 2024 Earthbnb</div>
+        <a href="#privacidad"> Privacidad - </a>  
+        <a href="#terminos"> Términos - </a>
+        <a href="#info"> Información de la compañía</a>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
