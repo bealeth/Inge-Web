@@ -7,7 +7,7 @@
 3. En earthbnb-react, ejecutar `npm start`. Lo que permite que el servidor en localhost inicie.
 4. Comenzar a desarrollar.
 
-## Backend
+## Backend 'earthbnb-backend'
 1. Crear la carpeta *earthbnb-backend*.
 2. Ejecutar, en el CMD, el comando: `npm init -y`. Con ello, se genera un archivo `package.json`.
 3. *Instalar dependecias necesarias* con los siguientes comandos:
