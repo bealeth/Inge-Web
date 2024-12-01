@@ -34,4 +34,5 @@ earthbnb-backend/
 
 ### Futuras instrucciones
 `npm install react-router-dom`
+`npm install axios`
 
