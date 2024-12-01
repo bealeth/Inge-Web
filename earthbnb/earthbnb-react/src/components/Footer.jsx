@@ -1,43 +1,25 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React from 'react';
+import './Footer.css'; // Asegúrate de crear este archivo para los estilos
 
-const Navbar = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    };
-
+const Footer = () => {
     return (
-        <nav className="navbar">
-            <div className="navbar-logo">
-                <a href="/">
-                    <img  
-                        alt="Logo de Earthbnb" 
-                    />
-                </a>
+        <footer className="footer">
+            <div className="footer-content">
+                <p>&copy; {new Date().getFullYear()} Earthbnb</p>
+                <nav>
+                    <ul className="footer-links">
+                        <li><a href="/privacy">Privacidad</a></li>
+                        <li>°</li>
+                        <li><a href="/terms">Términos</a></li>
+                        <li>°</li>
+                        <li><a href="/about-us">Acerca de nosotros</a></li>
+                        <li>°</li>
+                        <li><a href="/help">Centro de ayuda</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div className="navbar-links">
-                <ul>
-                    <li><a href="/host">Conviértete en anfitrión</a></li>
-                </ul>
-            </div>
-            <div className="navbar-auth">
-                <button className="btn-dropdown" onClick={toggleDropdown}>
-                    Cuenta &#9662; {/* Icono de flecha hacia abajo */}
-                </button>
-                {isDropdownOpen && (
-                    <div className="dropdown-menu">
-                        <ul>
-                            <li><a href="/login">Iniciar sesión</a></li>
-                            <li><a href="/signup">Regístrate</a></li>
-                            <li><a href="/help">Centro de ayuda</a></li>
-                        </ul>
-                    </div>
-                )}
-            </div>
-        </nav>
+        </footer>
     );
 };
 
-export default Navbar;
+export default Footer;
