@@ -1,0 +1,13 @@
+.not h2 {
+  color: #5A79EA;
+  font-size: xx-large;
+}
+
+.not h3 {
+  color: #5A79EA;
+}
+
+/* Aplicar Poppins a toda la aplicación */
+body {
+  font-family: 'Poppins';
+}

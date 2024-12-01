@@ -1,0 +1,102 @@
+/* Estilo general de la página */
+.homepage {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+.search-bar {
+    margin-bottom: 40px; /* Espacio debajo de la barra de búsqueda */
+}
+
+/* Hero banner */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-explore {
+    padding: 10px 20px;
+    background-color: #5A79EA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-explore:hover {
+    background-color: #5A79EA;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Destinos populares */
+.popular-destinations {
+    padding: 20px;
+    background-color: white;
+}
+
+.popular-destinations h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.destination-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.destination-card p {
+    font-size: 14px;
+    color: #666;
+}
