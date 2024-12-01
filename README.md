@@ -30,3 +30,8 @@ earthbnb-backend/
 ├── index.js            # Punto de entrada del servidor
 ├── package.json        # Configuración del proyecto
 5. Para ejecutar el servidor backend, usar `npm run dev`.
+
+
+### Futuras instrucciones
+`npm install react-router-dom`
+
