@@ -1,0 +1,189 @@
+/* Estilo general del navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; /* Equivale a 16px por defecto */
+}
+
+/* Logo */
+.navbar-logo img {
+    height: 25px;
+}
+
+
+/* Links en el navbar y en el dropdown */
+.navbar-links ul,
+.dropdown-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Enlaces dentro de los menús */
+.navbar-links ul li a,
+.dropdown-menu ul li a,
+.login-popup .input-group .link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Cambia el cursor cuando pase por encima */
+}
+
+/* Hover para enlaces */
+.navbar-links ul li a:hover,
+.dropdown-menu ul li:hover,
+.login-popup .input-group .link:hover {
+    color: #5A79EA;
+    transform: scale(1.05);
+}
+
+/* Estilo de los botones */
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: #333;
+}
+
+.btn-login:hover {
+    background-color: #f7f7f7;
+}
+
+.btn-signup {
+    background-color: #5A79EA;
+    color: white;
+}
+
+.btn-signup:hover {
+    background-color: #4A6CB0;
+}
+
+/* Dropdown y popup */
+.btn-dropdown {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 7px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el cambio */
+}
+
+.btn-dropdown:hover {
+    background-color: #f0f0f0; 
+    color: #5A79EA;
+    border-color: #5A79EA; 
+}
+
+.dropdown-menu {
+    font-size: 1rem; /* Equivale a 16px por defecto */
+
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-menu ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    font-size: 1rem; /* Equivale a 16px por defecto */
+    display: block; 
+    padding: 10px 20px; 
+    border-bottom: 1px solid #eee;
+    text-align: left; 
+    cursor: pointer;
+}
+
+.dropdown-menu ul li:last-child {
+    border-bottom: none; 
+}
+
+.dropdown-menu ul li:hover {
+    background-color: #ffffff;
+    color: #5A79EA; 
+    font-size: 1rem; /* Equivale a 16px por defecto */
+}
+
+/* Estilo del popup de inicio de sesión y registro */
+.login-popup, .register-popup {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Formularios */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-login, .btn-register {
+    width: 100%;
+    padding: 12px;
+    background-color: #5A79EA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #4A68C1;
+}
+
+/* Enlaces dentro de los formularios */
+.link {
+    color: #5A79EA;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Espaciado y ajuste en los formularios */
+.input-group p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
