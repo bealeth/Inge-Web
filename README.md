@@ -16,16 +16,17 @@
        Para manejar variables en el entorno de MongoDB: `npm install dotenv`.
        Para reiniciar automáticamente: `npm install --save-dev nodemon`.
 4. Crear las siguientes carpetas y archivos, para completar el esquema.
-          earthbnb-backend/
-              ├── config/
-              │   └── db.js           # Configuración de conexión a MongoDB
-              ├── models/
-              │   └── User.js         # Modelo de usuario
-              ├── routes/
-              │   └── userRoutes.js   # Rutas relacionadas con usuarios
-              ├── controllers/
-              │   └── userController.js # Lógica para manejar solicitudes
-              ├── .env                # Variables de entorno (URI de MongoDB, puerto)
-              ├── index.js            # Punto de entrada del servidor
-              ├── package.json        # Configuración del proyecto
+
+earthbnb-backend/
+├── config/
+│   └── db.js           # Configuración de conexión a MongoDB
+├── models/
+│   └── User.js         # Modelo de usuario
+├── routes/
+│   └── userRoutes.js   # Rutas relacionadas con usuarios
+├── controllers/
+│   └── userController.js # Lógica para manejar solicitudes
+├── .env                # Variables de entorno (URI de MongoDB, puerto)
+├── index.js            # Punto de entrada del servidor
+├── package.json        # Configuración del proyecto
 
