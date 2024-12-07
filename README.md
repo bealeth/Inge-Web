@@ -36,3 +36,7 @@ earthbnb-backend/
 `npm install react-router-dom`
 `npm install axios`
 
+## Mongo DB Atlas
+- Entrar a la cuenta de mongo atlas.
+- npm install mongodb
+- 
